@@ -1,0 +1,13 @@
+jdbc.datasourceName=jdbc/isweb
+
+# You can remove this property if you're not using Hibernate
+hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+# You can remove this property if you're not using iBATIS or Spring JDBC
+maxValueIncrementer=org.springframework.jdbc.support.incrementer.MySQLMaxValueIncrementer
+
+# Ping Servlet values
+ping.servlet.media.context=global
+ping.servlet.media.location=images
+ping.servlet.media.name=transparent.gif
+

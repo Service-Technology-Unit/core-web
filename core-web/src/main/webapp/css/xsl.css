@@ -1,0 +1,38 @@
+body {
+	font-family: Verdana, Arial
+}
+
+h3 {
+	color: midnightblue;
+}
+
+table, tr, td {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+.label {
+	color: #999;
+}
+
+.value {
+	font-weight: bold;
+}
+.control {
+	background-color: #f0f0f0;
+	color: #404040;
+	font-family: verdana;
+	font-size: xx-small;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-right: 1px solid #808080;
+	border-bottom: 1px solid #a0a0a0;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+.controlTable, .controlTable tr, .controlTable td {
+	border: none;
+	border-collapse: collapse;
+	padding: 5px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <link rel="stylesheet" type="text/css" href="/core/css/select.css" id="csslink">
+  <script language="Javascript" src="/core/scripts/select.js"></script>
+  <script language="Javascript" src="/core/scripts/ajaxcall.js"></script>
+  <title>Data Selection</title>
+  <script language="Javascript">
+document.write('<script language="Javascript" src="' + getJavascriptPath() + '"></' + 'script>');
+  </script>
+ </head>
+ <body onLoad="initializePage()">
+ <form name="searchIt">
+  <div align="center">
+   <table width="100%">
+    <tr>
+     <td>
+      <table width="100%">
+       <tr>
+        <td align="left">
+         <span id="startsWithLabel">Starts with ...</span>
+            <input name="startsWith" id="startsWith" onkeyup="javascript:captureInput(this);"/>
+        </td>
+        <td align="left" id="containscol" style="display: none; visibility: hidden;">
+         <span id="containsLabel">Contains ...</span>
+         <input name="contains" id="contains" onkeyup="javascript:captureInput(this);"/>
+        </td>
+        <td align="right">
+         <input type="button" class="button" value="|&lt;" onClick="firstPage()" />
+         <input type="button" class="button" value="&lt;" onClick="previousPage()" />
+         <input type="button" class="button" value="&gt;" onClick="nextPage()" />
+         <input type="button" class="button" value="&gt;|" onClick="lastPage()" />
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td><hr/></td>
+    </tr>
+    <tr>
+     <td id="dataGrid"></td>
+    </tr>
+    <tr>
+     <td><hr/></td>
+    </tr>
+    <tr>
+     <td>
+      <table width="100%">
+       <tr>
+        <td align="left" id="listStatistics"></td>
+        <td align="right">
+         <input type="button" class="button" value="|&lt;" onClick="firstPage()" />
+         <input type="button" class="button" value="&lt;" onClick="previousPage()" />
+         <input type="button" class="button" value="&gt;" onClick="nextPage()" />
+         <input type="button" class="button" value="&gt;|" onClick="lastPage()" />
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td><hr/></td>
+    </tr>
+    <tr>
+     <td align="right">
+      <input type="button" class="button" value="Close" onClick="closeWindow();" />
+     </td>
+    </tr>
+   </table>
+  </div>
+  </form>
+ </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+ <head>
+  <script type="text/javascript" src="js/uploadmedia.js"></script>
+ </head>
+ <body onload="initializePage();">
+     <form action="upload" method="post" enctype="multipart/form-data" accept-charset="UTF-8">
+      <fieldset>
+      <legend>Add new media file</legend>
+      <div style="width: 250px;float:left;">
+       <input id="file" name="file" type="file">
+       <img id="loading" style="visibility:hidden;display:none;margin:5px;" src="images/loadingAnimation.gif" alt="Uploading ..." border="0">
+      </div>
+      &nbsp;
+      Location:
+      <input name="location" id="location"type="text" size="12">
+      &nbsp;
+      Name:
+      <input name="name" id="name"type="text" size="12">
+      &nbsp;
+      Description:
+      <input name="description" id="description"type="text" size="12">
+      <input name="context" id="context" type="hidden">
+      &nbsp;
+      <input name="upload" value="Upload File" onclick="return submitForm();" type="submit">
+      </fieldset>
+     </form>
+ </body>
+</html>

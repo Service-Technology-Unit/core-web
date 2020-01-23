@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repo/!svn/ver/11539/projects/Core/trunk/current/core-web/src/main/webapp/xsl
+END
+page.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repo/!svn/ver/8792/projects/Core/trunk/current/core-web/src/main/webapp/xsl/page.xsl
+END
+batchjob.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repo/!svn/ver/11539/projects/Core/trunk/current/core-web/src/main/webapp/xsl/batchjob.xsl
+END
+user.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repo/!svn/ver/4387/projects/Core/trunk/current/core-web/src/main/webapp/xsl/user.xsl
+END
+client.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repo/!svn/ver/4387/projects/Core/trunk/current/core-web/src/main/webapp/xsl/client.xsl
+END
+media.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repo/!svn/ver/11539/projects/Core/trunk/current/core-web/src/main/webapp/xsl/media.xsl
+END
+batchjobinstance.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repo/!svn/ver/11539/projects/Core/trunk/current/core-web/src/main/webapp/xsl/batchjobinstance.xsl
+END
+menuitem.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repo/!svn/ver/4387/projects/Core/trunk/current/core-web/src/main/webapp/xsl/menuitem.xsl
+END
+groupedauthorizationresponse.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repo/!svn/ver/11539/projects/Core/trunk/current/core-web/src/main/webapp/xsl/groupedauthorizationresponse.xsl
+END
+batchjobschedule.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repo/!svn/ver/11539/projects/Core/trunk/current/core-web/src/main/webapp/xsl/batchjobschedule.xsl
+END

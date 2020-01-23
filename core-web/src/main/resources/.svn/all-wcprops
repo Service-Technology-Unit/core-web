@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repo/!svn/ver/11780/projects/Core/trunk/current/core-web/src/main/resources
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repo/!svn/ver/11780/projects/Core/trunk/current/core-web/src/main/resources/jdbc.properties
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repo/!svn/ver/11539/projects/Core/trunk/current/core-web/src/main/resources/log4j.xml
+END

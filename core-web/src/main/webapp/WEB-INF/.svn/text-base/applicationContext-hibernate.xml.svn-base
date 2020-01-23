@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd"> 
+
+    <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiName" value="${jdbc.datasourceName}" />
+    </bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+        <property name="packagesToScan" value="edu.ucdavis.ucdhs.isweb.core.beans"/>
+        <property name="dataSource" ref="dataSource"/>
+        <property name="mappingResources">
+            <list>
+                <value>edu/ucdavis/ucdhs/isweb/core/beans/LookupTable.hbm.xml</value>
+                <value>edu/ucdavis/ucdhs/isweb/core/beans/LookupTableEntry.hbm.xml</value>
+                <value>edu/ucdavis/ucdhs/isweb/core/beans/LookupTableProperty.hbm.xml</value>
+                <value>edu/ucdavis/ucdhs/isweb/core/beans/NoticeAudit.hbm.xml</value>
+                <value>edu/ucdavis/ucdhs/isweb/core/beans/NoticeTemplate.hbm.xml</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="batchJobDao" class="edu.ucdavis.ucdh.stu.core.dao.hibernate.BatchJobDaoHibernate">
+        <constructor-arg><ref bean="sessionFactory"/></constructor-arg>
+    </bean>
+
+    <bean id="batchJobScheduleDao" class="edu.ucdavis.ucdh.stu.core.dao.hibernate.BatchJobScheduleDaoHibernate">
+        <constructor-arg><ref bean="sessionFactory"/></constructor-arg>
+    </bean>
+
+    <bean id="batchJobInstanceDao" class="edu.ucdavis.ucdh.stu.core.dao.hibernate.BatchJobInstanceDaoHibernate">
+        <constructor-arg><ref bean="sessionFactory"/></constructor-arg>
+    </bean>
+
+    <bean id="configPropertyDao" class="edu.ucdavis.ucdh.stu.core.dao.hibernate.ConfigPropertyDaoHibernate">
+        <constructor-arg><ref bean="sessionFactory"/></constructor-arg>
+    </bean>
+
+    <bean id="lookupTableDao" class="edu.ucdavis.ucdh.stu.core.dao.hibernate.LookupTableDaoHibernate">
+        <constructor-arg><ref bean="sessionFactory"/></constructor-arg>
+    </bean>
+
+    <bean id="lookupTableEntryDao" class="edu.ucdavis.ucdh.stu.core.dao.hibernate.LookupTableEntryDaoHibernate">
+        <constructor-arg><ref bean="sessionFactory"/></constructor-arg>
+    </bean>
+
+    <bean id="noticeTemplateDao" class="edu.ucdavis.ucdh.stu.core.dao.hibernate.NoticeTemplateDaoHibernate">
+        <constructor-arg><ref bean="sessionFactory"/></constructor-arg>
+    </bean>
+
+    <bean id="noticeAuditDao" class="edu.ucdavis.ucdh.stu.core.dao.hibernate.NoticeAuditDaoHibernate">
+        <constructor-arg><ref bean="sessionFactory"/></constructor-arg>
+    </bean>
+
+    <bean id="userDao" class="edu.ucdavis.ucdh.stu.core.dao.hibernate.UserDaoHibernate">
+        <constructor-arg><ref bean="sessionFactory"/></constructor-arg>
+    </bean>
+
+    <bean id="mediaDao" class="edu.ucdavis.ucdh.stu.core.dao.hibernate.MediaDaoHibernate">
+        <constructor-arg><ref bean="sessionFactory"/></constructor-arg>
+    </bean>
+
+    <bean id="menuItemDao" class="edu.ucdavis.ucdh.stu.core.dao.hibernate.MenuItemDaoHibernate">
+        <constructor-arg><ref bean="sessionFactory"/></constructor-arg>
+    </bean>
+
+    <bean id="pageDao" class="edu.ucdavis.ucdh.stu.core.dao.hibernate.PageDaoHibernate">
+        <constructor-arg><ref bean="sessionFactory"/></constructor-arg>
+    </bean>
+
+    <bean id="pingDao" class="edu.ucdavis.ucdh.stu.core.dao.hibernate.PingDaoHibernate">
+        <constructor-arg><ref bean="sessionFactory"/></constructor-arg>
+    </bean>
+
+</beans>
