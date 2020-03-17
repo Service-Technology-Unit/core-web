@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>edu.ucdavis.ucdh.stu</groupId>
   <artifactId>core-web</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <packaging>war</packaging>
   <name>core-web</name>
 	<description>
@@ -139,8 +139,8 @@
 		</dependency>
 		<dependency>
 			<groupId>edu.ucdavis.ucdh.stu</groupId>
-			<artifactId>core-test</artifactId>
-			<version>1.0.1</version>
+			<artifactId>core</artifactId>
+			<version>1.0.2</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
