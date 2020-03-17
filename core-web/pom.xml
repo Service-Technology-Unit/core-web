@@ -135,11 +135,11 @@
 		<dependency>
 			<groupId>edu.ucdavis.ucdh.stu</groupId>
 			<artifactId>core</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>edu.ucdavis.ucdh.stu</groupId>
-			<artifactId>core</artifactId>
+			<artifactId>core-test</artifactId>
 			<version>1.0.2</version>
 			<scope>test</scope>
 		</dependency>
